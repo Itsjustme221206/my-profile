@@ -1,0 +1,408 @@
+/* ===== This is the General Styles ===== */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #e5edf7;
+    background-color: #0b1220;
+}
+
+a {
+    color: #67e8f9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.hero-subtitle {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: 0.08rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #67e8f9;
+}
+
+h3 {
+    font-family: "Poppins", Arial, sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+}
+
+section {
+    scroll-margin-top: 5rem;
+}
+
+/* ===== This is the Navigation ===== */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #111c30;
+    border-bottom: 0.0625rem solid #26374f;
+}
+
+.navbar {
+    max-width: 75rem;
+    min-height: 4.5rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.logo {
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #67e8f9;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.nav-links a {
+    color: #e5edf7;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    color: #67e8f9;
+}
+
+/* ===== This is the Hero Section ===== */
+.hero {
+    min-height: 27rem;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #111c30, #12334b);
+    border-bottom: 0.0625rem solid #26374f;
+}
+
+.eyebrow {
+    margin-bottom: 0.75rem;
+    color: #67e8f9;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12rem;
+}
+
+.hero-subtitle {
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border: 0.0625rem solid #67e8f9;
+    border-radius: 0.5rem;
+    background-color: #67e8f9;
+    color: #0b1220;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: background-color 0.2s ease;
+}
+
+.button:hover {
+    background-color: #a5f3fc;
+    color: #0b1220;
+}
+
+/* ===== This is the Shared Sections ===== */
+.section {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+}
+
+.section-intro {
+    margin-bottom: 2rem;
+    color: #cbd5e1;
+}
+
+/* ===== This is the About: Photo Placeholder + Flexbox ===== */
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.photo-placeholder img {
+    width: 100%;
+    max-width: 14rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.photo-initials {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #164e63;
+    color: #cffafe;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.photo-label {
+    margin-bottom: 0.25rem;
+    font-weight: 700;
+}
+
+.photo-note {
+    color: #cbd5e1;
+    font-size: 0.8rem;
+}
+
+.bio {
+    flex: 1;
+    min-width: 0;
+}
+
+.bio p {
+    color: #cbd5e1;
+}
+
+.bio-highlight {
+    padding-left: 1rem;
+    border-left: 0.1875rem solid #67e8f9;
+}
+
+/* ===== This is the Things I Love ===== */
+.interest-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.interest-card {
+    flex: 1 1 13rem;
+    padding: 1.5rem;
+    background-color: #111c30;
+    border: 0.0625rem solid #26374f;
+    border-radius: 0.75rem;
+    margin: 0;
+}
+
+.interest-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.interest-card p {
+    margin-bottom: 0;
+    color: #cbd5e1;
+}
+
+.card-number {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #67e8f9;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* ===== This is my Passion Projects Layout ===== */
+.project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.project-grid .project-card {
+    flex: 1 1 18rem;
+}
+
+.project-date {
+    margin-top: 1rem;
+    margin-bottom: 0;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+/* ===== This is my Passion Projects ===== */
+.project-card {
+    padding: 2rem;
+    background-color: #111c30;
+    border: 0.0625rem solid #36536c;
+    border-left: 0.25rem solid #67e8f9;
+    border-radius: 0.75rem;
+    margin: 0;
+}
+
+.project-card p:not(.eyebrow) {
+    color: #cbd5e1;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 2rem;
+    background-color: #164e63;
+    color: #cffafe;
+    font-size: 0.8rem;
+}
+
+/* ===== This is the Contact ===== */
+.contact-card {
+    max-width: 40rem;
+    padding: 1.5rem;
+    background-color: #111c30;
+    border: 0.0625rem solid #26374f;
+    border-radius: 0.75rem;
+}
+
+.contact-card p {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-card p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-card strong {
+    min-width: 6rem;
+    color: #ffffff;
+}
+
+/* ===== This is the Footer ===== */
+footer {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #111c30;
+    border-top: 0.0625rem solid #26374f;
+}
+
+footer p {
+    margin-bottom: 0;
+    color: #cbd5e1;
+    font-size: 0.85rem;
+}
+
+/* ===== This is for the Mobile Responsive Layout ===== */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 0.75rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 0.75rem 1rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 4rem 1.25rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section {
+        padding: 3rem 1.25rem;
+    }
+
+    .about-layout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+    }
+
+    .photo-placeholder {
+        flex-basis: auto;
+        min-height: 14rem;
+    }
+
+    .interest-grid {
+        flex-direction: column;
+    }
+
+    .interest-card {
+        flex-basis: auto;
+    }
+
+    .project-card {
+        padding: 1.25rem;
+    }
+
+    .contact-card p {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+    <project>
+        <title>Mythogin: Philippine Mythology Educational Game</title>
+        <description>
+            An educational game project that uses game-based learning
+            to introduce Filipino mythology and culture.
+        </description>
+        <date>2025</date>
+    </project>
+
+    <project>
+        <title>Personal About Me Website</title>
+        <description>
+            A personal website built with HTML to showcase my background,
+            interests, contact information, and passion projects.
+        </description>
+        <date>2026</date>
+    </project>
+
+    <project>
+        <title>Mobile App Development Project</title>
+        <description>
+            A planned project focused on developing a useful mobile
+            application to strengthen my programming and app development skills.
+        </description>
+        <date>Planned</date>
+    </project>
+</projects>
